@@ -1,6 +1,8 @@
 @font-face {
-  font-family: 'Digital Numbers';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Digital Numbers'), url('./digital-numbers.woff') format('woff');
+	font-family: "Digital Numbers";
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local("Digital Numbers"),
+		url("./digital-numbers.woff") format("woff");
 }

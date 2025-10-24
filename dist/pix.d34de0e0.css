@@ -30,33 +30,23 @@
       --pix--nav-breadcrumb-divider: ">";
 
       @media (width >= 576px) {
-        & {
-          --pix--font-size: 106.25%;
-        }
+        --pix--font-size: 106.25%;
       }
 
       @media (width >= 768px) {
-        & {
-          --pix--font-size: 112.5%;
-        }
+        --pix--font-size: 112.5%;
       }
 
       @media (width >= 1024px) {
-        & {
-          --pix--font-size: 118.75%;
-        }
+        --pix--font-size: 118.75%;
       }
 
       @media (width >= 1280px) {
-        & {
-          --pix--font-size: 125%;
-        }
+        --pix--font-size: 125%;
       }
 
       @media (width >= 1536px) {
-        & {
-          --pix--font-size: 131.25%;
-        }
+        --pix--font-size: 131.25%;
       }
     }
   }
@@ -68,14 +58,12 @@
     }
 
     :after, :before {
-      -webkit-text-decoration: inherit;
       text-decoration: inherit;
       vertical-align: inherit;
     }
 
     :where(:root) {
       -webkit-tap-highlight-color: transparent;
-      -moz-text-size-adjust: 100%;
       text-size-adjust: 100%;
       background-color: var(--pix--background-color);
       color: var(--pix--color);
@@ -411,9 +399,7 @@
         --pix--underline: var(--pix--primary-underline);
         background-color: var(--pix--background-color);
         color: var(--pix--color);
-        -webkit-text-decoration: var(--pix--text-decoration);
         text-decoration: var(--pix--text-decoration);
-        -webkit-text-decoration-color: var(--pix--underline);
         text-decoration-color: var(--pix--underline);
         text-underline-offset: .125em;
         transition: background-color var(--pix--transition), color var(--pix--transition), text-decoration var(--pix--transition), box-shadow var(--pix--transition);
@@ -919,33 +905,23 @@
         margin-right: auto;
 
         @media (width >= 576px) {
-          & {
-            max-width: 510px;
-          }
+          max-width: 510px;
         }
 
         @media (width >= 768px) {
-          & {
-            max-width: 700px;
-          }
+          max-width: 700px;
         }
 
         @media (width >= 1024px) {
-          & {
-            max-width: 950px;
-          }
+          max-width: 950px;
         }
 
         @media (width >= 1280px) {
-          & {
-            max-width: 1200px;
-          }
+          max-width: 1200px;
         }
 
         @media (width >= 1536px) {
-          & {
-            max-width: 1450px;
-          }
+          max-width: 1450px;
         }
       }
     }
@@ -1680,7 +1656,6 @@
       line-height: var(--pix--line-height);
       text-align: center;
       cursor: pointer;
-      -webkit-user-select: none;
       user-select: none;
       transition: background-color var(--pix--transition), border-color var(--pix--transition), color var(--pix--transition), box-shadow var(--pix--transition);
       text-decoration: none;
@@ -1700,7 +1675,6 @@
       line-height: var(--pix--line-height);
       text-align: center;
       cursor: pointer;
-      -webkit-user-select: none;
       user-select: none;
       transition: background-color var(--pix--transition), border-color var(--pix--transition), color var(--pix--transition), box-shadow var(--pix--transition);
       text-decoration: none;
@@ -1985,7 +1959,6 @@
       color: var(--pix--form-element-placeholder-color);
       line-height: inherit;
       cursor: pointer;
-      -webkit-user-select: none;
       user-select: none;
       transition: background-color var(--pix--transition), border-color var(--pix--transition), color var(--pix--transition), box-shadow var(--pix--transition);
     }
@@ -2388,4 +2361,4 @@ style[type="text/css"] {
 .dropdown.color-scheme {
   width: 12rem;
 }
-/*# sourceMappingURL=pix.7ec1beaa.css.map */
+/*# sourceMappingURL=pix.d34de0e0.css.map */

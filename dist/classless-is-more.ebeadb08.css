@@ -1,7 +1,7 @@
 @layer pixu-talk.typography.fira-code {
   @font-face {
     font-family: Fira Code;
-    src: local(Fira Code Light), local(FiraCode-Light), url("FiraCode-200.0979ba40.woff2") format("woff2"), url("FiraCode-200.40a6c1d2.woff") format("woff");
+    src: local(Fira Code Light), local(FiraCode-Light), url("FiraCode-200.62ca20a5.woff2") format("woff2"), url("FiraCode-200.7d926936.woff") format("woff");
     font-weight: 200;
     font-style: normal;
     font-display: block;
@@ -9,7 +9,7 @@
 
   @font-face {
     font-family: Fira Code;
-    src: local(Fira Code Regular), local(FiraCode-Regular), url("FiraCode-400.c07636ac.woff2") format("woff2"), url("FiraCode-400.136276ba.woff") format("woff");
+    src: local(Fira Code Regular), local(FiraCode-Regular), url("FiraCode-400.582efef0.woff2") format("woff2"), url("FiraCode-400.8ea73057.woff") format("woff");
     font-weight: 400;
     font-style: normal;
     font-display: block;
@@ -17,7 +17,7 @@
 
   @font-face {
     font-family: Fira Code;
-    src: local(Fira Code Medium), local(FiraCode-Medium), url("FiraCode-500.b02cecef.woff2") format("woff2"), url("FiraCode-500.1de1ab0b.woff") format("woff");
+    src: local(Fira Code Medium), local(FiraCode-Medium), url("FiraCode-500.e2c4359b.woff2") format("woff2"), url("FiraCode-500.83e1532f.woff") format("woff");
     font-weight: 500;
     font-style: normal;
     font-display: block;
@@ -25,7 +25,7 @@
 
   @font-face {
     font-family: Fira Code;
-    src: local(Fira Code Bold), local(FiraCode-Bold), url("FiraCode-700.ee62a364.woff2") format("woff2"), url("FiraCode-700.a9e61bdf.woff") format("woff");
+    src: local(Fira Code Bold), local(FiraCode-Bold), url("FiraCode-700.267e233e.woff2") format("woff2"), url("FiraCode-700.0116c61e.woff") format("woff");
     font-weight: 700;
     font-style: normal;
     font-display: block;
@@ -33,7 +33,7 @@
 
   @font-face {
     font-family: Fira Code Retina;
-    src: local(Fira Code Retina), local(FiraCode-Retina), url("FiraCode-Retina.2be35569.woff2") format("woff2"), url("FiraCode-Retina.c766790a.woff") format("woff");
+    src: local(Fira Code Retina), local(FiraCode-Retina), url("FiraCode-Retina.c397256a.woff2") format("woff2"), url("FiraCode-Retina.c5b07d34.woff") format("woff");
     font-weight: 900;
     font-style: normal;
     font-display: block;
@@ -41,7 +41,7 @@
 
   @font-face {
     font-family: Fira Code Monospace;
-    src: local(Fira Code Retina), local(FiraCode-Retina), url("FiraCode-Retina.2be35569.woff2") format("woff2"), url("FiraCode-Retina.c766790a.woff") format("woff");
+    src: local(Fira Code Retina), local(FiraCode-Retina), url("FiraCode-Retina.c397256a.woff2") format("woff2"), url("FiraCode-Retina.c5b07d34.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     unicode-range: U+30-39, U+20A3-20A7, U+2C, U+2E;
@@ -49,7 +49,7 @@
 
   @font-face {
     font-family: Fira Code Monospace Full;
-    src: local(Fira Code Retina), local(FiraCode-Retina), url("FiraCode-Retina.2be35569.woff2") format("woff2"), url("FiraCode-Retina.c766790a.woff") format("woff");
+    src: local(Fira Code Retina), local(FiraCode-Retina), url("FiraCode-Retina.c397256a.woff2") format("woff2"), url("FiraCode-Retina.c5b07d34.woff") format("woff");
     font-weight: normal;
     font-style: normal;
   }
@@ -58,7 +58,7 @@
 @layer pixu-talk.typography.rec-vf {
   @font-face {
     font-family: RecVF;
-    src: url("RecVF.e71349f6.woff2") format("woff2 supports variations"), url("RecVF.e71349f6.woff2") format("woff2-variations");
+    src: url("RecVF.f56a359d.woff2") format("woff2 supports variations"), url("RecVF.f56a359d.woff2") format("woff2-variations");
     font-weight: 300 1000;
     font-style: oblique 0deg 14deg;
     font-display: block;
@@ -115,13 +115,25 @@
       }
 
       & pre {
+        scrollbar-width: none;
         max-width: 65%;
         margin: 0 auto;
+        overflow: auto;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
 
         & code {
+          scrollbar-width: none;
           max-height: 40rem;
           font-size: .8em;
           line-height: 1.3;
+          overflow: auto;
+
+          &::-webkit-scrollbar {
+            display: none;
+          }
         }
       }
     }
@@ -541,7 +553,7 @@
 @layer pixu-talk.iconography.draft-ui-icons {
   @font-face {
     font-family: draft-ui-icons;
-    src: url("draft-ui-icons.171ad3c7.ttf") format("truetype"), url("draft-ui-icons.f35d360b.woff") format("woff"), url("draft-ui-icons.188a20be.svg#draft-ui-icons") format("svg");
+    src: url("draft-ui-icons.ca61f00f.ttf") format("truetype"), url("draft-ui-icons.ce1d48e7.woff") format("woff"), url("draft-ui-icons.7117472e.svg#draft-ui-icons") format("svg");
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -887,7 +899,7 @@
 @layer pixu-talk.iconography.space-icons {
   @font-face {
     font-family: space-icons;
-    src: url("space-icons.9578aaab.ttf") format("truetype"), url("space-icons.e5497c7a.woff") format("woff"), url("space-icons.e1a785ce.svg#space-icons") format("svg");
+    src: url("space-icons.5542bb35.ttf") format("truetype"), url("space-icons.f34600a1.woff") format("woff"), url("space-icons.1810f459.svg#space-icons") format("svg");
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -11499,7 +11511,7 @@
 @layer pixu-talk.iconography.anicons {
   @font-face {
     font-family: anicons;
-    src: url("anicons.44b7a8d8.woff2") format("woff2 supports variations"), url("anicons.44b7a8d8.woff2") format("woff2-variations");
+    src: url("anicons.868fe84e.woff2") format("woff2 supports variations"), url("anicons.868fe84e.woff2") format("woff2-variations");
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -11507,7 +11519,7 @@
 
   @font-face {
     font-family: anicons-color;
-    src: url("anicons-color.7eebbc7e.woff2") format("woff2 supports variations"), url("anicons-color.7eebbc7e.woff2") format("woff2-variations");
+    src: url("anicons-color.8f501f70.woff2") format("woff2 supports variations"), url("anicons-color.8f501f70.woff2") format("woff2-variations");
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -13946,32 +13958,32 @@
 
   @font-face {
     font-family: Source Sans Pro;
-    src: url("source-sans-pro-regular.f807c4bc.eot");
-    src: url("source-sans-pro-regular.f807c4bc.eot#iefix") format("embedded-opentype"), url("source-sans-pro-regular.2a33e8ee.woff") format("woff"), url("source-sans-pro-regular.eb1661d5.ttf") format("truetype");
+    src: url("source-sans-pro-regular.f09df2e4.eot");
+    src: url("source-sans-pro-regular.f09df2e4.eot#iefix") format("embedded-opentype"), url("source-sans-pro-regular.4d4039a4.woff") format("woff"), url("source-sans-pro-regular.5c3f07d3.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
   }
 
   @font-face {
     font-family: Source Sans Pro;
-    src: url("source-sans-pro-italic.c2b11051.eot");
-    src: url("source-sans-pro-italic.c2b11051.eot#iefix") format("embedded-opentype"), url("source-sans-pro-italic.216ff6af.woff") format("woff"), url("source-sans-pro-italic.afc37291.ttf") format("truetype");
+    src: url("source-sans-pro-italic.5ad8beb8.eot");
+    src: url("source-sans-pro-italic.5ad8beb8.eot#iefix") format("embedded-opentype"), url("source-sans-pro-italic.0669b0f6.woff") format("woff"), url("source-sans-pro-italic.c56faa80.ttf") format("truetype");
     font-weight: normal;
     font-style: italic;
   }
 
   @font-face {
     font-family: Source Sans Pro;
-    src: url("source-sans-pro-semibold.785790c9.eot");
-    src: url("source-sans-pro-semibold.785790c9.eot#iefix") format("embedded-opentype"), url("source-sans-pro-semibold.0321aef0.woff") format("woff"), url("source-sans-pro-semibold.dc40d109.ttf") format("truetype");
+    src: url("source-sans-pro-semibold.8487c82c.eot");
+    src: url("source-sans-pro-semibold.8487c82c.eot#iefix") format("embedded-opentype"), url("source-sans-pro-semibold.bf60eda2.woff") format("woff"), url("source-sans-pro-semibold.ee4934fb.ttf") format("truetype");
     font-weight: 600;
     font-style: normal;
   }
 
   @font-face {
     font-family: Source Sans Pro;
-    src: url("source-sans-pro-semibolditalic.a1c84ec2.eot");
-    src: url("source-sans-pro-semibolditalic.a1c84ec2.eot#iefix") format("embedded-opentype"), url("source-sans-pro-semibolditalic.697490d2.woff") format("woff"), url("source-sans-pro-semibolditalic.a7834247.ttf") format("truetype");
+    src: url("source-sans-pro-semibolditalic.11cebf76.eot");
+    src: url("source-sans-pro-semibolditalic.11cebf76.eot#iefix") format("embedded-opentype"), url("source-sans-pro-semibolditalic.429fffb5.woff") format("woff"), url("source-sans-pro-semibolditalic.95aeed3b.ttf") format("truetype");
     font-weight: 600;
     font-style: italic;
   }
@@ -14601,13 +14613,44 @@
       --font-base: 1.6rem;
       --gutter-base: 1.5rem;
       --r-main-font-size: 4.5rem;
-      --r-background-color: light-dark(#f0f0f0, #191919);
-      --r-main-color: light-dark(#191919, #f0f0f0);
-      --r-heading-color: light-dark(#191919, #f0f0f0);
-      --r-heading-margin: 0;
-      --r-heading-text-transform: none;
-      --r-link-color: light-dark(#639, #ad85d6);
-      --r-highlight-color: light-dark(#639, #ad85d6);
+    }
+
+    @supports (color: light-dark(#fff, #000)) {
+      :root {
+        --r-background-color: light-dark(#f0f0f0, #191919);
+        --r-main-color: light-dark(#191919, #f0f0f0);
+        --r-heading-color: light-dark(#191919, #f0f0f0);
+        --r-heading-margin: 0;
+        --r-heading-text-transform: none;
+        --r-link-color: light-dark(#639, #ad85d6);
+        --r-highlight-color: light-dark(#639, #ad85d6);
+      }
+    }
+
+    @supports not (color: light-dark(#fff, #000)) {
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --r-background-color: #191919;
+          --r-main-color: #f0f0f0;
+          --r-heading-color: #f0f0f0;
+          --r-heading-margin: 0;
+          --r-heading-text-transform: none;
+          --r-link-color: #ad85d6;
+          --r-highlight-color: #ad85d6;
+        }
+      }
+
+      @media (prefers-color-scheme: light) {
+        :root {
+          --r-background-color: #f0f0f0;
+          --r-main-color: #191919;
+          --r-heading-color: #191919;
+          --r-heading-margin: 0;
+          --r-heading-text-transform: none;
+          --r-link-color: #639;
+          --r-highlight-color: #639;
+        }
+      }
     }
   }
 
@@ -14776,6 +14819,21 @@
 
     .hljs-ln td {
       padding: 0 0 0 1rem !important;
+    }
+  }
+
+  @layer brand {
+    [brand] {
+      z-index: 10;
+      position: fixed;
+      inset: auto auto 3rem 3rem;
+
+      & img {
+        aspect-ratio: 1;
+        border: 2px #639;
+        border-radius: 2rem;
+        inline-size: 10rem;
+      }
     }
   }
 
@@ -15079,9 +15137,7 @@
             }
 
             @media (prefers-color-scheme: light) {
-              & {
-                filter: invert();
-              }
+              filter: invert();
             }
           }
         }
@@ -15597,7 +15653,7 @@
   font-family: Digital Numbers;
   font-style: normal;
   font-weight: 400;
-  src: local(Digital Numbers), url("digital-numbers.8cb45243.woff") format("woff");
+  src: local(Digital Numbers), url("digital-numbers.6202719d.woff") format("woff");
 }
 
 @font-face {
@@ -15605,7 +15661,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("michroma.9fb79deb.woff2") format("woff2");
+  src: url("michroma.6c8c630e.woff2") format("woff2");
   unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
@@ -15614,7 +15670,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("michroma-numbers.7bd16d6d.woff2") format("woff2");
+  src: url("michroma-numbers.323fa249.woff2") format("woff2");
   unicode-range: U+??, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-/*# sourceMappingURL=classless-is-more.4b8c34ff.css.map */
+/*# sourceMappingURL=classless-is-more.ebeadb08.css.map */
