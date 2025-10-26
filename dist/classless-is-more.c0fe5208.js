@@ -51255,7 +51255,7 @@ var $47b02048c6e74b64$exports = {};
  *    to the notes window
  * 
  * Copyright (c) 2025 Emiliano "pixu1980" Pisu
- */ const $291e097f2120a96b$var$HeaderPlugin = ()=>{
+ */ const $542e9a98d9f8978a$var$HeaderPlugin = ()=>{
     let deck;
     const headerPlugin = {
         id: 'header',
@@ -51295,7 +51295,7 @@ var $47b02048c6e74b64$exports = {};
     };
     return headerPlugin;
 };
-var $291e097f2120a96b$export$2e2bcd8739ae039 = $291e097f2120a96b$var$HeaderPlugin;
+var $542e9a98d9f8978a$export$2e2bcd8739ae039 = $542e9a98d9f8978a$var$HeaderPlugin;
 
 
 /*
@@ -51303,7 +51303,7 @@ var $291e097f2120a96b$export$2e2bcd8739ae039 = $291e097f2120a96b$var$HeaderPlugi
  * MIT licensed
  * 
  * Copyright (c) 2025 Emiliano "pixu1980" Pisu
- */ const $468f7a347c1b5fb8$var$defaults = {
+ */ const $ee33314e39800510$var$defaults = {
     side: 'right',
     numbers: false,
     titleSelector: 'h1, h2, h3, h4, h5',
@@ -51326,7 +51326,7 @@ var $291e097f2120a96b$export$2e2bcd8739ae039 = $291e097f2120a96b$var$HeaderPlugi
     delayInit: false,
     openOnInit: false
 };
-class $468f7a347c1b5fb8$var$Menu {
+class $ee33314e39800510$var$Menu {
     deck;
     dom = {
         reveal: null,
@@ -52007,25 +52007,25 @@ class $468f7a347c1b5fb8$var$Menu {
     constructor(deck){
         this.deck = deck;
         this.settings = {
-            ...$468f7a347c1b5fb8$var$defaults,
+            ...$ee33314e39800510$var$defaults,
             ...deck.getConfig()?.menu
         };
         this.init();
     }
 }
-const $468f7a347c1b5fb8$var$Plugin = ()=>{
+const $ee33314e39800510$var$Plugin = ()=>{
     let instance;
     return {
         id: 'menu',
         init: (deck)=>{
-            instance = new $468f7a347c1b5fb8$var$Menu(deck);
+            instance = new $ee33314e39800510$var$Menu(deck);
         },
         toggleMenu: ()=>{
             instance.toggle();
         }
     };
 };
-var $468f7a347c1b5fb8$export$2e2bcd8739ae039 = $468f7a347c1b5fb8$var$Plugin;
+var $ee33314e39800510$export$2e2bcd8739ae039 = $ee33314e39800510$var$Plugin;
 
 
 /*
@@ -52037,7 +52037,7 @@ var $468f7a347c1b5fb8$export$2e2bcd8739ae039 = $468f7a347c1b5fb8$var$Plugin;
  * - Notes ?
  * - PDF export ?
  * - tooltips
- */ const $7187345dd71287c5$var$defaults = {
+ */ const $705fa02b7751a3e9$var$defaults = {
     position: 'top',
     fullscreen: true,
     colorScheme: true,
@@ -52047,7 +52047,7 @@ var $468f7a347c1b5fb8$export$2e2bcd8739ae039 = $468f7a347c1b5fb8$var$Plugin;
     help: true,
     menu: true
 };
-class $7187345dd71287c5$var$Toolbar {
+class $705fa02b7751a3e9$var$Toolbar {
     deck;
     dom = {
         reveal: null,
@@ -52157,22 +52157,22 @@ class $7187345dd71287c5$var$Toolbar {
     constructor(deck){
         this.deck = deck;
         this.settings = {
-            ...$7187345dd71287c5$var$defaults,
+            ...$705fa02b7751a3e9$var$defaults,
             ...deck.getConfig()?.toolbar
         };
         this.init();
         this.deck.dispatchEvent('toolbar-ready', this, true);
     }
 }
-const $7187345dd71287c5$var$Plugin = ()=>{
+const $705fa02b7751a3e9$var$Plugin = ()=>{
     return {
         id: 'toolbar',
         init: (deck)=>{
-            new $7187345dd71287c5$var$Toolbar(deck);
+            new $705fa02b7751a3e9$var$Toolbar(deck);
         }
     };
 };
-var $7187345dd71287c5$export$2e2bcd8739ae039 = $7187345dd71287c5$var$Plugin;
+var $705fa02b7751a3e9$export$2e2bcd8739ae039 = $705fa02b7751a3e9$var$Plugin;
 
 
 
@@ -52418,7 +52418,7 @@ addEventListener('DOMContentLoaded', ()=>{
             (0, (/*@__PURE__*/$parcel$interopDefault($4002db5decd7789a$exports))),
             (0, (/*@__PURE__*/$parcel$interopDefault($076471d7064f32b1$exports))),
             (0, (/*@__PURE__*/$parcel$interopDefault($47b02048c6e74b64$exports))),
-            (0, $7187345dd71287c5$export$2e2bcd8739ae039)
+            (0, $705fa02b7751a3e9$export$2e2bcd8739ae039)
         ],
         navigationMode: 'linear',
         menu: {
@@ -52617,4 +52617,4 @@ addEventListener("DOMContentLoaded", ()=>{
 
 
 
-//# sourceMappingURL=classless-is-more.8c4533c8.js.map
+//# sourceMappingURL=classless-is-more.c0fe5208.js.map
