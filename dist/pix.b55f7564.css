@@ -1,9 +1,12 @@
 @layer pix {
   @layer api {
     :root {
-      --pix--font-family-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-      --pix--font-family-sans-serif: system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, Helvetica, Arial, "Helvetica Neue", sans-serif, var(--pix--font-family-emoji);
-      --pix--font-family-monospace: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace, var(--pix--font-family-emoji);
+      --pix--font-family-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+			"Noto Color Emoji";
+      --pix--font-family-sans-serif: system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, Helvetica, Arial,
+			"Helvetica Neue", sans-serif, var(--pix--font-family-emoji);
+      --pix--font-family-monospace: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+			"Liberation Mono", monospace, var(--pix--font-family-emoji);
       --pix--font-family: var(--pix--font-family-sans-serif);
       --pix--line-height: 1.5;
       --pix--font-weight: 400;
@@ -20,8 +23,10 @@
       --pix--form-element-spacing-vertical: .5rem;
       --pix--form-element-spacing-horizontal: 1rem;
       --pix--group-box-shadow: 0 0 0 #0000;
-      --pix--group-box-shadow-focus-with-button: 0 0 0 var(--pix--outline-width) var(--pix--primary-focus);
-      --pix--group-box-shadow-focus-with-input: 0 0 0 .0625rem var(--pix--form-element-border-color);
+      --pix--group-box-shadow-focus-with-button: 0 0 0 var(--pix--outline-width)
+			var(--pix--primary-focus);
+      --pix--group-box-shadow-focus-with-input: 0 0 0 .0625rem
+			var(--pix--form-element-border-color);
       --pix--modal-overlay-backdrop-filter: blur(.375rem);
       --pix--nav-element-spacing-vertical: 1rem;
       --pix--nav-element-spacing-horizontal: .5rem;
@@ -64,6 +69,7 @@
 
     :where(:root) {
       -webkit-tap-highlight-color: transparent;
+      -moz-text-size-adjust: 100%;
       text-size-adjust: 100%;
       background-color: var(--pix--background-color);
       color: var(--pix--color);
@@ -72,7 +78,7 @@
       line-height: var(--pix--line-height);
       font-family: var(--pix--font-family);
       text-underline-offset: var(--pix--text-underline-offset);
-      text-rendering: optimizeLegibility;
+      text-rendering: optimizelegibility;
       overflow-wrap: break-word;
       tab-size: 4;
     }
@@ -109,7 +115,8 @@
 
       article {
         margin-bottom: var(--pix--block-spacing-vertical);
-        padding: var(--pix--block-spacing-vertical) var(--pix--block-spacing-horizontal);
+        padding: var(--pix--block-spacing-vertical)
+				var(--pix--block-spacing-horizontal);
         border-radius: var(--pix--border-radius);
         background: var(--pix--card-background-color);
         box-shadow: var(--pix--card-box-shadow);
@@ -117,14 +124,16 @@
         & > :where(header, footer) {
           margin-right: calc(var(--pix--block-spacing-horizontal) * -1);
           margin-left: calc(var(--pix--block-spacing-horizontal) * -1);
-          padding: calc(var(--pix--block-spacing-vertical) * .66) var(--pix--block-spacing-horizontal);
+          padding: calc(var(--pix--block-spacing-vertical) * .66)
+					var(--pix--block-spacing-horizontal);
           background-color: var(--pix--card-sectioning-background-color);
         }
 
         & > header {
           margin-top: calc(var(--pix--block-spacing-vertical) * -1);
           margin-bottom: var(--pix--block-spacing-vertical);
-          border-bottom: var(--pix--border-width) solid var(--pix--card-border-color);
+          border-bottom: var(--pix--border-width) solid
+					var(--pix--card-border-color);
           border-top-right-radius: var(--pix--border-radius);
           border-top-left-radius: var(--pix--border-radius);
         }
@@ -170,14 +179,17 @@
       }
 
       nav li {
-        padding: var(--pix--nav-element-spacing-vertical) var(--pix--nav-element-spacing-horizontal);
+        padding: var(--pix--nav-element-spacing-vertical)
+				var(--pix--nav-element-spacing-horizontal);
         margin: 0;
         display: inline-block;
       }
 
       nav li :where(a, [role="link"]) {
-        margin: calc(var(--pix--nav-link-spacing-vertical) * -1) calc(var(--pix--nav-link-spacing-horizontal) * -1);
-        padding: var(--pix--nav-link-spacing-vertical) var(--pix--nav-link-spacing-horizontal);
+        margin: calc(var(--pix--nav-link-spacing-vertical) * -1)
+				calc(var(--pix--nav-link-spacing-horizontal) * -1);
+        padding: var(--pix--nav-link-spacing-vertical)
+				var(--pix--nav-link-spacing-horizontal);
         border-radius: var(--pix--border-radius);
         display: inline-block;
       }
@@ -191,7 +203,10 @@
         margin-right: inherit;
         margin-bottom: 0;
         margin-left: inherit;
-        padding: calc(var(--pix--nav-link-spacing-vertical)  - var(--pix--border-width) * 2) var(--pix--nav-link-spacing-horizontal);
+        padding: calc(var(--pix--nav-link-spacing-vertical) -
+					var(--pix--border-width) *
+					2)
+				var(--pix--nav-link-spacing-horizontal);
       }
 
       nav[aria-label="breadcrumb"] {
@@ -238,7 +253,8 @@
       }
 
       aside li {
-        padding: calc(var(--pix--nav-element-spacing-vertical) * .5) var(--pix--nav-element-spacing-horizontal);
+        padding: calc(var(--pix--nav-element-spacing-vertical) * .5)
+				var(--pix--nav-element-spacing-horizontal);
       }
 
       aside li a {
@@ -402,7 +418,10 @@
         text-decoration: var(--pix--text-decoration);
         text-decoration-color: var(--pix--underline);
         text-underline-offset: .125em;
-        transition: background-color var(--pix--transition), color var(--pix--transition), text-decoration var(--pix--transition), box-shadow var(--pix--transition);
+        transition: background-color var(--pix--transition),
+				color var(--pix--transition),
+				text-decoration var(--pix--transition),
+				box-shadow var(--pix--transition);
       }
 
       :where(a:not([role="button"])):is([aria-current]:not([aria-current="false"]), :hover, :active, :focus), [role="link"]:is([aria-current]:not([aria-current="false"]), :hover, :active, :focus) {
@@ -422,7 +441,8 @@
 
       td, th {
         padding: calc(var(--pix--spacing) / 2) var(--pix--spacing);
-        border-bottom: var(--pix--border-width) solid var(--pix--table-border-color);
+        border-bottom: var(--pix--border-width) solid
+				var(--pix--table-border-color);
         background-color: var(--pix--background-color);
         color: var(--pix--color);
         font-weight: var(--pix--font-weight);
@@ -631,8 +651,10 @@
       --pix--contrast-border: var(--pix--contrast-background);
       --pix--contrast-hover-border: var(--pix--contrast-hover-background);
       --pix--contrast-hover-underline: var(--pix--contrast-hover);
-      --pix--light--box-shadow: .0145rem .029rem .174rem #8191b504, .0335rem .067rem .402rem #8191b506, .0625rem .125rem .75rem #8191b508, .1125rem .225rem 1.35rem #8191b509, .2085rem .417rem 2.502rem #8191b50b, .5rem 1rem 6rem #8191b50f, 0 0 0 .0625rem #8191b504;
-      --pix--dark--box-shadow: .0145rem .029rem .174rem #07090c04, .0335rem .067rem .402rem #07090c06, .0625rem .125rem .75rem #07090c08, .1125rem .225rem 1.35rem #07090c09, .2085rem .417rem 2.502rem #07090c0b, .5rem 1rem 6rem #07090c0f, 0 0 0 .0625rem #07090c04;
+      --pix--light--box-shadow: .0145rem .029rem .174rem #8191b504, .0335rem .067rem .402rem #8191b506, .0625rem .125rem .75rem #8191b508, .1125rem .225rem 1.35rem #8191b509,
+			.2085rem .417rem 2.502rem #8191b50b, .5rem 1rem 6rem #8191b50f, 0 0 0 .0625rem #8191b504;
+      --pix--dark--box-shadow: .0145rem .029rem .174rem #07090c04, .0335rem .067rem .402rem #07090c06, .0625rem .125rem .75rem #07090c08, .1125rem .225rem 1.35rem #07090c09,
+			.2085rem .417rem 2.502rem #07090c0b, .5rem 1rem 6rem #07090c0f, 0 0 0 .0625rem #07090c04;
       --pix--box-shadow: light-dark(var(--pix--light--box-shadow), var(--pix--dark--box-shadow));
       --pix--light--h1-color: #2d3138;
       --pix--light--h2-color: #373c44;
@@ -900,7 +922,8 @@
 
       & > :where(header, main, footer) {
         width: 100%;
-        padding: var(--pix--block-spacing-vertical) var(--pix--block-spacing-horizontal);
+        padding: var(--pix--block-spacing-vertical)
+				var(--pix--block-spacing-horizontal);
         margin-left: auto;
         margin-right: auto;
 
@@ -975,7 +998,12 @@
       }
 
       input:not([type="checkbox"], [type="radio"], [type="range"]) {
-        height: calc(1rem * var(--pix--line-height)  + var(--pix--form-element-spacing-vertical) * 2 + var(--pix--border-width) * 2);
+        height: calc(1rem *
+				var(--pix--line-height) +
+				var(--pix--form-element-spacing-vertical) *
+				2 +
+				var(--pix--border-width) *
+				2);
       }
 
       legend {
@@ -1010,7 +1038,8 @@
 
       input:not([type="checkbox"], [type="radio"], [type="range"], [type="file"]), select, textarea {
         appearance: none;
-        padding: var(--pix--form-element-spacing-vertical) var(--pix--form-element-spacing-horizontal);
+        padding: var(--pix--form-element-spacing-vertical)
+				var(--pix--form-element-spacing-horizontal);
       }
 
       input, select, textarea {
@@ -1022,7 +1051,10 @@
         background-color: var(--pix--background-color);
         color: var(--pix--color);
         font-weight: var(--pix--font-weight);
-        transition: background-color var(--pix--transition), border-color var(--pix--transition), color var(--pix--transition), box-shadow var(--pix--transition);
+        transition: background-color var(--pix--transition),
+				border-color var(--pix--transition),
+				color var(--pix--transition),
+				box-shadow var(--pix--transition);
       }
 
       :where(select, textarea):not([readonly]):is(:active, :focus), input:not([type="submit"], [type="button"], [type="reset"], [type="checkbox"], [type="radio"], [readonly]):is(:active, :focus) {
@@ -1047,9 +1079,11 @@
         background-position: right .75rem center;
         background-repeat: no-repeat;
         background-size: 1rem;
-        padding-right: calc(var(--pix--form-element-spacing-horizontal)  + 1.5rem) !important;
+        padding-right: calc(var(--pix--form-element-spacing-horizontal) +
+				1.5rem) !important;
         padding-inline-start: var(--pix--form-element-spacing-horizontal) !important;
-        padding-inline-end: calc(var(--pix--form-element-spacing-horizontal)  + 1.5rem) !important;
+        padding-inline-end: calc(var(--pix--form-element-spacing-horizontal) +
+				1.5rem) !important;
       }
 
       :where(input, select, textarea):not([type="checkbox"], [type="radio"], [type="date"], [type="datetime-local"], [type="month"], [type="time"], [type="week"], [type="range"])[aria-invalid="false"]:not(select) {
@@ -1113,14 +1147,15 @@
       }
 
       select:not([multiple], [size]) {
-        padding-right: calc(var(--pix--form-element-spacing-horizontal)  + 1.5rem);
+        padding-right: calc(var(--pix--form-element-spacing-horizontal) + 1.5rem);
         padding-left: var(--pix--form-element-spacing-horizontal);
         background-image: var(--pix--icon-chevron);
         background-position: right .75rem center;
         background-repeat: no-repeat;
         background-size: 1rem;
         padding-inline-start: var(--pix--form-element-spacing-horizontal);
-        padding-inline-end: calc(var(--pix--form-element-spacing-horizontal)  + 1.5rem);
+        padding-inline-end: calc(var(--pix--form-element-spacing-horizontal) +
+				1.5rem);
       }
 
       select[multiple] option:checked {
@@ -1138,7 +1173,12 @@
       }
 
       textarea[aria-invalid] {
-        --pix--icon-height: calc(1rem * var(--pix--line-height)  + var(--pix--form-element-spacing-vertical) * 2 + var(--pix--border-width) * 2);
+        --pix--icon-height: calc(1rem *
+				var(--pix--line-height) +
+				var(--pix--form-element-spacing-vertical) *
+				2 +
+				var(--pix--border-width) *
+				2);
         background-position: right .75rem top !important;
         background-size: 1rem var(--pix--icon-height) !important;
       }
@@ -1317,7 +1357,7 @@
       input:not([type="checkbox"], [type="radio"], [type="range"], [type="file"]):is([type="date"], [type="datetime-local"], [type="month"], [type="time"], [type="week"]) {
         --pix--icon-position: .75rem;
         --pix--icon-width: 1rem;
-        padding-right: calc(var(--pix--icon-width)  + var(--pix--icon-position));
+        padding-right: calc(var(--pix--icon-width) + var(--pix--icon-position));
         background-image: var(--pix--icon-date);
         background-position: center right var(--pix--icon-position);
         background-size: var(--pix--icon-width) auto;
@@ -1386,7 +1426,8 @@
 
       [type="file"]::file-selector-button {
         margin-right: calc(var(--pix--spacing) / 2);
-        padding: calc(var(--pix--form-element-spacing-vertical) * .5) var(--pix--form-element-spacing-horizontal);
+        padding: calc(var(--pix--form-element-spacing-vertical) * .5)
+				var(--pix--form-element-spacing-horizontal);
       }
 
       [type="file"]:is(:hover, :active, :focus)::file-selector-button {
@@ -1406,8 +1447,10 @@
         background-color: var(--pix--range-border-color);
         width: 100%;
         height: .375rem;
-        -webkit-transition: background-color var(--pix--transition), box-shadow var(--pix--transition);
-        transition: background-color var(--pix--transition), box-shadow var(--pix--transition);
+        -webkit-transition: background-color var(--pix--transition),
+				box-shadow var(--pix--transition);
+        transition: background-color var(--pix--transition),
+				box-shadow var(--pix--transition);
       }
 
       [type="range"]::-moz-range-track {
@@ -1415,8 +1458,10 @@
         background-color: var(--pix--range-border-color);
         width: 100%;
         height: .375rem;
-        -moz-transition: background-color var(--pix--transition), box-shadow var(--pix--transition);
-        transition: background-color var(--pix--transition), box-shadow var(--pix--transition);
+        -moz-transition: background-color var(--pix--transition),
+				box-shadow var(--pix--transition);
+        transition: background-color var(--pix--transition),
+				box-shadow var(--pix--transition);
       }
 
       [type="range"]::-ms-track {
@@ -1424,8 +1469,10 @@
         background-color: var(--pix--range-border-color);
         width: 100%;
         height: .375rem;
-        -ms-transition: background-color var(--pix--transition), box-shadow var(--pix--transition);
-        transition: background-color var(--pix--transition), box-shadow var(--pix--transition);
+        -ms-transition: background-color var(--pix--transition),
+				box-shadow var(--pix--transition);
+        transition: background-color var(--pix--transition),
+				box-shadow var(--pix--transition);
       }
 
       [type="range"]::-webkit-slider-thumb {
@@ -1435,8 +1482,10 @@
         cursor: pointer;
         width: 1.25rem;
         height: 1.25rem;
-        -webkit-transition: background-color var(--pix--transition), transform var(--pix--transition);
-        transition: background-color var(--pix--transition), transform var(--pix--transition);
+        -webkit-transition: background-color var(--pix--transition),
+				transform var(--pix--transition);
+        transition: background-color var(--pix--transition),
+				transform var(--pix--transition);
         border-radius: 50%;
         margin-top: -.4375rem;
       }
@@ -1448,8 +1497,10 @@
         cursor: pointer;
         width: 1.25rem;
         height: 1.25rem;
-        -moz-transition: background-color var(--pix--transition), transform var(--pix--transition);
-        transition: background-color var(--pix--transition), transform var(--pix--transition);
+        -moz-transition: background-color var(--pix--transition),
+				transform var(--pix--transition);
+        transition: background-color var(--pix--transition),
+				transform var(--pix--transition);
         border-radius: 50%;
         margin-top: -.4375rem;
       }
@@ -1461,8 +1512,10 @@
         cursor: pointer;
         width: 1.25rem;
         height: 1.25rem;
-        -ms-transition: background-color var(--pix--transition), transform var(--pix--transition);
-        transition: background-color var(--pix--transition), transform var(--pix--transition);
+        -ms-transition: background-color var(--pix--transition),
+				transform var(--pix--transition);
+        transition: background-color var(--pix--transition),
+				transform var(--pix--transition);
         border-radius: 50%;
         margin-top: -.4375rem;
       }
@@ -1486,15 +1539,18 @@
 
       input:not([type="checkbox"], [type="radio"], [type="range"], [type="file"])[type="search"] {
         background-image: var(--pix--icon-search);
-        background-position: center left calc(var(--pix--form-element-spacing-horizontal)  + .125rem);
+        background-position: center left
+				calc(var(--pix--form-element-spacing-horizontal) + .125rem);
         background-repeat: no-repeat;
         background-size: 1rem;
-        padding-inline-start: calc(var(--pix--form-element-spacing-horizontal)  + 1.75rem);
+        padding-inline-start: calc(var(--pix--form-element-spacing-horizontal) +
+				1.75rem);
       }
 
       input:not([type="checkbox"], [type="radio"], [type="range"], [type="file"])[type="search"][aria-invalid] {
         background-position: 1.125rem, right .75rem center;
-        padding-inline-start: calc(var(--pix--form-element-spacing-horizontal)  + 1.75rem) !important;
+        padding-inline-start: calc(var(--pix--form-element-spacing-horizontal) +
+				1.75rem) !important;
       }
 
       input:not([type="checkbox"], [type="radio"], [type="range"], [type="file"])[type="search"][aria-invalid="false"] {
@@ -1572,8 +1628,10 @@
         }
 
         [role="group"]:has(input:not([type="submit"], [type="button"]):focus, select:focus) [role="button"], [role="group"]:has(input:not([type="submit"], [type="button"]):focus, select:focus) [type="button"], [role="group"]:has(input:not([type="submit"], [type="button"]):focus, select:focus) [type="submit"], [role="group"]:has(input:not([type="submit"], [type="button"]):focus, select:focus) button, [role="search"]:has(input:not([type="submit"], [type="button"]):focus, select:focus) [role="button"], [role="search"]:has(input:not([type="submit"], [type="button"]):focus, select:focus) [type="button"], [role="search"]:has(input:not([type="submit"], [type="button"]):focus, select:focus) [type="submit"], [role="search"]:has(input:not([type="submit"], [type="button"]):focus, select:focus) button {
-          --pix--button-box-shadow: 0 0 0 var(--pix--border-width) var(--pix--primary-border);
-          --pix--button-hover-box-shadow: 0 0 0 var(--pix--border-width) var(--pix--primary-hover-border);
+          --pix--button-box-shadow: 0 0 0 var(--pix--border-width)
+					var(--pix--primary-border);
+          --pix--button-hover-box-shadow: 0 0 0 var(--pix--border-width)
+					var(--pix--primary-hover-border);
         }
       }
 
@@ -1646,7 +1704,8 @@
       --pix--background-color: var(--pix--primary-background);
       --pix--border-color: var(--pix--primary-border);
       --pix--color: var(--pix--primary-inverse);
-      padding: var(--pix--form-element-spacing-vertical) var(--pix--form-element-spacing-horizontal);
+      padding: var(--pix--form-element-spacing-vertical)
+			var(--pix--form-element-spacing-horizontal);
       border: var(--pix--border-width) solid var(--pix--border-color);
       border-radius: var(--pix--border-radius);
       background-color: var(--pix--background-color);
@@ -1656,8 +1715,12 @@
       line-height: var(--pix--line-height);
       text-align: center;
       cursor: pointer;
+      -webkit-user-select: none;
       user-select: none;
-      transition: background-color var(--pix--transition), border-color var(--pix--transition), color var(--pix--transition), box-shadow var(--pix--transition);
+      transition: background-color var(--pix--transition),
+			border-color var(--pix--transition),
+			color var(--pix--transition),
+			box-shadow var(--pix--transition);
       text-decoration: none;
     }
 
@@ -1665,7 +1728,8 @@
       --pix--background-color: var(--pix--primary-background);
       --pix--border-color: var(--pix--primary-border);
       --pix--color: var(--pix--primary-inverse);
-      padding: var(--pix--form-element-spacing-vertical) var(--pix--form-element-spacing-horizontal);
+      padding: var(--pix--form-element-spacing-vertical)
+			var(--pix--form-element-spacing-horizontal);
       border: var(--pix--border-width) solid var(--pix--border-color);
       border-radius: var(--pix--border-radius);
       background-color: var(--pix--background-color);
@@ -1675,8 +1739,12 @@
       line-height: var(--pix--line-height);
       text-align: center;
       cursor: pointer;
+      -webkit-user-select: none;
       user-select: none;
-      transition: background-color var(--pix--transition), border-color var(--pix--transition), color var(--pix--transition), box-shadow var(--pix--transition);
+      transition: background-color var(--pix--transition),
+			border-color var(--pix--transition),
+			color var(--pix--transition),
+			box-shadow var(--pix--transition);
       text-decoration: none;
     }
 
@@ -1723,11 +1791,13 @@
     }
 
     [type="reset"]:focus {
-      --pix--box-shadow: var(--pix--button-hover-box-shadow, 0 0 0 #0000), 0 0 0 var(--pix--outline-width) var(--pix--secondary-focus);
+      --pix--box-shadow: var(--pix--button-hover-box-shadow, 0 0 0 #0000), 0 0 0
+			var(--pix--outline-width) var(--pix--secondary-focus);
     }
 
     [type="file"]::file-selector-button:focus {
-      --pix--box-shadow: var(--pix--button-hover-box-shadow, 0 0 0 #0000), 0 0 0 var(--pix--outline-width) var(--pix--secondary-focus);
+      --pix--box-shadow: var(--pix--button-hover-box-shadow, 0 0 0 #0000), 0 0 0
+			var(--pix--outline-width) var(--pix--secondary-focus);
     }
 
     :where(button, [type="submit"], [type="reset"], [type="button"], [role="button"])[disabled], :where(fieldset[disabled]) :is(button, [type="submit"], [type="button"], [type="reset"], [role="button"]) {
@@ -1943,7 +2013,7 @@
       background-size: 1rem;
       margin-inline-start: .25rem;
       display: block;
-      transform: rotate(0)translateX(.2rem);
+      transform: rotate(0) translateX(.2rem);
     }
 
     nav details.dropdown {
@@ -1951,16 +2021,26 @@
     }
 
     details.dropdown summary:not([role]) {
-      height: calc(1rem * var(--pix--line-height)  + var(--pix--form-element-spacing-vertical) * 2 + var(--pix--border-width) * 2);
-      padding: var(--pix--form-element-spacing-vertical) var(--pix--form-element-spacing-horizontal);
+      height: calc(1rem *
+			var(--pix--line-height) +
+			var(--pix--form-element-spacing-vertical) *
+			2 +
+			var(--pix--border-width) *
+			2);
+      padding: var(--pix--form-element-spacing-vertical)
+			var(--pix--form-element-spacing-horizontal);
       border: var(--pix--border-width) solid var(--pix--form-element-border-color);
       border-radius: var(--pix--border-radius);
       background-color: var(--pix--form-element-background-color);
       color: var(--pix--form-element-placeholder-color);
       line-height: inherit;
       cursor: pointer;
+      -webkit-user-select: none;
       user-select: none;
-      transition: background-color var(--pix--transition), border-color var(--pix--transition), color var(--pix--transition), box-shadow var(--pix--transition);
+      transition: background-color var(--pix--transition),
+			border-color var(--pix--transition),
+			color var(--pix--transition),
+			box-shadow var(--pix--transition);
     }
 
     details.dropdown summary:not([role]):active, details.dropdown summary:not([role]):focus {
@@ -1986,12 +2066,18 @@
     }
 
     nav details.dropdown summary:after {
-      transform: rotate(0)translateX(0);
+      transform: rotate(0) translateX(0);
     }
 
     nav details.dropdown summary:not([role]) {
-      height: calc(1rem * var(--pix--line-height)  + var(--pix--nav-link-spacing-vertical) * 2);
-      padding: calc(var(--pix--nav-link-spacing-vertical)  - var(--pix--border-width) * 2) var(--pix--nav-link-spacing-horizontal);
+      height: calc(1rem *
+			var(--pix--line-height) +
+			var(--pix--nav-link-spacing-vertical) *
+			2);
+      padding: calc(var(--pix--nav-link-spacing-vertical) -
+				var(--pix--border-width) *
+				2)
+			var(--pix--nav-link-spacing-horizontal);
     }
 
     details.dropdown summary + menu {
@@ -2006,7 +2092,8 @@
       color: var(--pix--dropdown-color);
       white-space: nowrap;
       opacity: 0;
-      transition: opacity var(--pix--transition), transform 0s ease-in-out 1s;
+      transition: opacity var(--pix--transition),
+			transform 0s ease-in-out 1s;
       flex-direction: column;
       padding: 0;
       display: flex;
@@ -2021,7 +2108,8 @@
 
     details.dropdown summary + menu label {
       width: 100%;
-      padding: calc(var(--pix--form-element-spacing-vertical) * .5) var(--pix--form-element-spacing-horizontal);
+      padding: calc(var(--pix--form-element-spacing-vertical) * .5)
+			var(--pix--form-element-spacing-horizontal);
       margin-bottom: 0;
       list-style: none;
     }
@@ -2035,8 +2123,10 @@
     }
 
     details.dropdown summary + menu label a {
-      margin: calc(var(--pix--form-element-spacing-vertical) * -.5) calc(var(--pix--form-element-spacing-horizontal) * -1);
-      padding: calc(var(--pix--form-element-spacing-vertical) * .5) var(--pix--form-element-spacing-horizontal);
+      margin: calc(var(--pix--form-element-spacing-vertical) * -.5)
+			calc(var(--pix--form-element-spacing-horizontal) * -1);
+      padding: calc(var(--pix--form-element-spacing-vertical) * .5)
+			var(--pix--form-element-spacing-horizontal);
       color: var(--pix--dropdown-color);
       text-overflow: ellipsis;
       border-radius: 0;
@@ -2063,7 +2153,8 @@
 
     details.dropdown[open] summary + menu {
       opacity: 1;
-      transition: opacity var(--pix--transition), transform 0s ease-in-out 0s;
+      transition: opacity var(--pix--transition),
+			transform 0s ease-in-out 0s;
       transform: scaleY(1);
     }
 
@@ -2145,7 +2236,11 @@
 
     @media (prefers-reduced-motion: no-preference) {
       progress:indeterminate {
-        background: var(--pix--progress-background-color) linear-gradient(to right, var(--pix--progress-color) 30%, var(--pix--progress-background-color) 30%) top left / 150% 150% no-repeat;
+        background: var(--pix--progress-background-color)
+				linear-gradient(to right,
+					var(--pix--progress-color) 30%,
+					var(--pix--progress-background-color) 30%)
+				top left / 150% 150% no-repeat;
         animation: 1s linear infinite progress-indeterminate;
       }
 
@@ -2361,4 +2456,4 @@ style[type="text/css"] {
 .dropdown.color-scheme {
   width: 12rem;
 }
-/*# sourceMappingURL=pix.aadb588e.css.map */
+/*# sourceMappingURL=pix.b55f7564.css.map */
