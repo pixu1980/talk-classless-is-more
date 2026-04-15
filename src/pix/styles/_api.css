@@ -4,8 +4,8 @@
 			"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
 			"Noto Color Emoji";
 		--pix--font-family-sans-serif:
-			system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, Helvetica, Arial,
-			"Helvetica Neue", sans-serif, var(--pix--font-family-emoji);
+			system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, Helvetica,
+			Arial, "Helvetica Neue", sans-serif, var(--pix--font-family-emoji);
 		--pix--font-family-monospace:
 			ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
 			"Liberation Mono", monospace, var(--pix--font-family-emoji);

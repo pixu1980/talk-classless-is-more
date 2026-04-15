@@ -3,8 +3,8 @@
     :root {
       --pix--font-family-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
 			"Noto Color Emoji";
-      --pix--font-family-sans-serif: system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, Helvetica, Arial,
-			"Helvetica Neue", sans-serif, var(--pix--font-family-emoji);
+      --pix--font-family-sans-serif: system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, Helvetica,
+			Arial, "Helvetica Neue", sans-serif, var(--pix--font-family-emoji);
       --pix--font-family-monospace: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
 			"Liberation Mono", monospace, var(--pix--font-family-emoji);
       --pix--font-family: var(--pix--font-family-sans-serif);
@@ -1791,13 +1791,13 @@
     }
 
     [type="reset"]:focus {
-      --pix--box-shadow: var(--pix--button-hover-box-shadow, 0 0 0 #0000), 0 0 0
-			var(--pix--outline-width) var(--pix--secondary-focus);
+      --pix--box-shadow: var(--pix--button-hover-box-shadow, 0 0 0 #0000),
+			0 0 0 var(--pix--outline-width) var(--pix--secondary-focus);
     }
 
     [type="file"]::file-selector-button:focus {
-      --pix--box-shadow: var(--pix--button-hover-box-shadow, 0 0 0 #0000), 0 0 0
-			var(--pix--outline-width) var(--pix--secondary-focus);
+      --pix--box-shadow: var(--pix--button-hover-box-shadow, 0 0 0 #0000),
+			0 0 0 var(--pix--outline-width) var(--pix--secondary-focus);
     }
 
     :where(button, [type="submit"], [type="reset"], [type="button"], [role="button"])[disabled], :where(fieldset[disabled]) :is(button, [type="submit"], [type="button"], [type="reset"], [role="button"]) {
@@ -2456,4 +2456,4 @@ style[type="text/css"] {
 .dropdown.color-scheme {
   width: 12rem;
 }
-/*# sourceMappingURL=pix.b55f7564.css.map */
+/*# sourceMappingURL=pix.6359aa1e.css.map */

@@ -96,8 +96,8 @@
 	[type="file"]::file-selector-button:focus,
 	[type="reset"]:focus {
 		--pix--box-shadow:
-			var(--pix--button-hover-box-shadow, 0 0 0 rgba(0, 0, 0, 0)), 0 0 0
-			var(--pix--outline-width) var(--pix--secondary-focus);
+			var(--pix--button-hover-box-shadow, 0 0 0 rgba(0, 0, 0, 0)),
+			0 0 0 var(--pix--outline-width) var(--pix--secondary-focus);
 	}
 	:where(
 			button,
